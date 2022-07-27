@@ -14,13 +14,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { ProductComponent } from './product/product.component'
 import { FormsModule } from '@angular/forms';
+import { OrderesComponent } from './orderes/orderes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ProductComponent,
-    RegisterComponent
+    RegisterComponent,
+    OrderesComponent
   ],
   imports: [
     BrowserModule,

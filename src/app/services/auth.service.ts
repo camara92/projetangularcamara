@@ -17,4 +17,7 @@ export class AuthService {
   commande(order : Order){
     return this.fs.collection('orderes').add(order)
   }
+  getOrderes(){
+    return this.fs.collection("orderes").snapshotChanges(); 
+  }
 }
