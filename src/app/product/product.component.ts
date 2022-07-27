@@ -41,7 +41,7 @@ export class ProductComponent implements OnInit {
     })
   }
 
-  /***************************paiment  */
+  /***************************paiment  *************************/
   pay(total: number){
     var handler= (<any>window).StripeCheckout.configure({
       key:'pk_test_aeUUjYYcx4XNfKVW60pmHTtI', 
