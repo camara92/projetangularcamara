@@ -1,8 +1,26 @@
 <div class="container mt-4">
-  <h2 class="text-center couleurtexte">register</h2>
+  <h2 class="text-center couleurtexte">Inscription</h2>
 
 
   <form  #f="ngForm" (ngSubmit)="register(f)" class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Firstname </mat-label>
+      <input
+        type="text"
+        matInput
+        placeholder="Votre prénom" name="FirstName" ngModel
+
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Lastname </mat-label>
+      <input
+        type="text"
+        matInput
+        placeholder="Votre nom" name="LastName" ngModel
+
+      />
+    </mat-form-field>
     <mat-form-field class="example-full-width">
       <mat-label>Votre Email </mat-label>
       <input
@@ -19,7 +37,7 @@
     </mat-form-field>
     <section>
       <div class="example-label">
-        <button mat-raised-button color="accent" type="submit">Login</button>
+        <button mat-raised-button color="accent" type="submit">S'inscrire</button>
       </div>
     </section>
   </form>
