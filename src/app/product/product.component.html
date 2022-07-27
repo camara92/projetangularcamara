@@ -65,14 +65,14 @@
       <tr>
         <th scope="col">Bananes</th>
         <th scope="col">Prix</th>
-        <th scope="col">Quantité</th>
+        <th scope="col">Quantité choisie est : {{quantities}} </th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td></td>
         <td>50 &euro;/ quantites</td>
-        <td>Total : 100 &euro;</td>
+        <td>Total à payer : {{total}} &euro;</td>
       </tr>
     </tbody>
   </table>
@@ -91,7 +91,7 @@
       <input name="adresse" ngModel  type="text" class="form-control" placeholder="25 Rue de la Republique Lyon 69005" />
     </div>
     <div class="col-12">
-      <button type="submit" class="btn btn-primary">Valider ma commande</button>
+      <button type="submit" (click)="pay(total)" class="btn btn-primary">Valider et payer la commande </button>
     </div>
   </form>
 </div>

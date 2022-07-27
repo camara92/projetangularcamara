@@ -16,13 +16,14 @@ import { ProductComponent } from './product/product.component'
 import { FormsModule } from '@angular/forms';
 import { OrderesComponent } from './orderes/orderes.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ProductComponent,
     RegisterComponent,
-    OrderesComponent
+    OrderesComponent,
   ],
   imports: [
     BrowserModule,
