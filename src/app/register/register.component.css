@@ -8,8 +8,8 @@
   width: 100%;
 
 }
-.couleurtexte{
-  color: red;
+.textfontsize{
+  font-size: 45px;
 }
 section{
   display: table;
@@ -23,4 +23,6 @@ section{
 
 form{
   margin: 0 auto;
+  /* background-color: rgb(255, 205, 251); */
+
  }

@@ -1,8 +1,13 @@
 <div class="container" *ngIf="formProduit">
-  <h2 class="text-center text-nfo my-5 bg-white bold shadow text-dark p-4">Bienvenue dans votre espace de réservatin produits locaux </h2>
+  <h2
+    class="text-center text-nfo my-5 bg-primary bold shadow text-white p-4"
+    style="font-size: 35px"
+  >
+    Bienvenue dans votre espace de réservatin produits locaux
+  </h2>
   <div
     class="card mb-3 border border-info rounded p-4"
-    style=" margin-top: 100px"
+    style="margin-top: 100px"
   >
     <div class="row g-0">
       <div class="col-md-4">
@@ -13,7 +18,7 @@
         />
       </div>
       <div class="col-md-8">
-        <div class="card-body ">
+        <div class="card-body">
           <h5 class="card-title">Mes bananes Bio</h5>
           <p class="card-text">
             La banane serait-elle l'un des aliments miracles pour préserver...
@@ -55,7 +60,7 @@
   </div>
 </div>
 <div class="container mt-4" *ngIf="formCommand">
-  <div class="alert alert-success text-center shadow bold " *ngIf="message">
+  <div class="alert alert-success text-center shadow bold" *ngIf="message">
     Votre commande est prise en compte !
   </div>
   <h3 class="text-center mt-4">Ma commande</h3>
@@ -65,14 +70,14 @@
       <tr>
         <th scope="col">Bananes</th>
         <th scope="col">Prix</th>
-        <th scope="col">Quantité choisie est : {{quantities}} </th>
+        <th scope="col">Quantité choisie est : {{ quantities }}</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td></td>
         <td>50 &euro;/ quantites</td>
-        <td>Total à payer : {{total}} &euro;</td>
+        <td>Total à payer : {{ total }} &euro;</td>
       </tr>
     </tbody>
   </table>
@@ -80,18 +85,41 @@
   <form class="row g-3" #f="ngForm" (ngSubmit)="commande(f)">
     <div class="col-md-6">
       <label for="inputEmail4" class="form-label">Nom et prénom</label>
-      <input type="text" name="name" ngModel  class="form-control" placeholder="CAMARA Daouda" />
+      <input
+        type="text"
+        name="name"
+        ngModel
+        class="form-control"
+        placeholder="CAMARA Daouda"
+        required
+      />
     </div>
     <div class="col-md-6">
       <label class="form-label">Téléphone : </label>
-      <input name="tel" ngModel  type="text" class="form-control" placeholder="07.67.43.82.83" />
+      <input
+        name="tel"
+        ngModel
+        type="text"
+        class="form-control"
+        placeholder="07.67.43.82.83"
+        required
+      />
     </div>
     <div class="col-12">
       <label class="form-label">Address</label>
-      <input name="adresse" ngModel  type="text" class="form-control" placeholder="25 Rue de la Republique Lyon 69005" />
+      <input
+        name="adresse"
+        ngModel
+        type="text"
+        class="form-control"
+        placeholder="25 Rue de la Republique Lyon 69005"
+        required
+      />
     </div>
     <div class="col-12">
-      <button type="submit" (click)="pay(total)" class="btn btn-primary">Valider et payer la commande </button>
+      <button type="submit" (click)="pay(total)" class="btn btn-primary">
+        Valider et payer la commande
+      </button>
     </div>
   </form>
 </div>

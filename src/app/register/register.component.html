@@ -1,15 +1,16 @@
 <div class="container mt-4">
-  <h2 class="text-center couleurtexte">Inscription</h2>
+  <h2 class="text-center text-white bg-danger p-4 textfontsize">Inscription</h2>
 
-
-  <form  #f="ngForm" (ngSubmit)="register(f)" class="example-form">
+  <form #f="ngForm" (ngSubmit)="register(f)" class="example-form my-5 border">
     <mat-form-field class="example-full-width">
       <mat-label>Firstname </mat-label>
       <input
         type="text"
         matInput
-        placeholder="Votre prénom" name="FirstName" ngModel
-
+        placeholder="Votre prénom"
+        name="FirstName"
+        ngModel
+        required
       />
     </mat-form-field>
     <mat-form-field class="example-full-width">
@@ -17,8 +18,10 @@
       <input
         type="text"
         matInput
-        placeholder="Votre nom" name="LastName" ngModel
-
+        placeholder="Votre nom"
+        name="LastName"
+        ngModel
+        required
       />
     </mat-form-field>
     <mat-form-field class="example-full-width">
@@ -26,18 +29,29 @@
       <input
         type="email"
         matInput
-        placeholder="Votre email" name="email" ngModel
-
+        placeholder="Votre email"
+        name="email"
+        ngModel
+        required
       />
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
       <mat-label>Password</mat-label>
-      <input type="password" name="password" ngModel matInput placeholder="Votre mot de passe !" />
+      <input
+        type="password"
+        name="password"
+        ngModel
+        matInput
+        placeholder="Votre mot de passe !"
+        required
+      />
     </mat-form-field>
     <section>
       <div class="example-label">
-        <button mat-raised-button color="accent" type="submit">S'inscrire</button>
+        <button mat-raised-button color="accent" type="submit">
+          S'inscrire
+        </button>
       </div>
     </section>
   </form>

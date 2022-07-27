@@ -8,8 +8,8 @@
   width: 100%;
 
 }
-.couleurtexte{
-  color: red;
+.textfontsize{
+  font-size: 45px;
 }
 section{
   display: table;
