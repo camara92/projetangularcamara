@@ -1,0 +1,41 @@
+<div class="container">
+  <h2 class="text-center text-nfo"></h2>
+  <div class="card mb-3 border border-info rounded p-4" style="max-width: 1040px; margin-top: 100px">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img
+          src="https://media.gettyimages.com/photos/bunch-of-bananas-isolated-on-white-background-picture-id958873642?k=20&m=958873642&s=612x612&w=0&h=QB834HWITNRIhT_p_Vi9z4DjGeauhtFW0fPZBMAvLxQ="
+          class="img-fluid rounded-start"
+          alt="image banane"
+        />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Mes bananes Bio</h5>
+          <p class="card-text">
+            a banane serait-elle l'un des aliments miracles pour préserver...
+            votre cœur ? Selon une nouvelle étude publiée le vendredi 22 juillet
+            2022 dans la revue European Heart Journal, ce fruit particulièrement
+            riche en potassium aurait en effet le don de réduire le risque de
+            maladie cardio-vasculaires... et ce de manière nettement plus
+            marquée chez les femmes. "Il est bien connu qu'une consommation
+            élevée de sel est associée à une pression artérielle élevée et à un
+            risque accru de crises cardiaques et d'accidents vasculaires
+            cérébraux", explique Liffert Vogt, professeur de néphrologie
+            clinique et de physiologie rénale aux centres médicaux
+            universitaires d'Amsterdam (Pays-Bas), dans un communiqué mis en
+            ligne sur le site de l'European Society of Cardiology.
+          </p>
+        </div>
+        <form #f="ngForm" (ngSubmit)="buy(f)">
+          <div class="form-group row">
+            <button f class="col-sm-2 col-form-label border border-info rounded">Buy</button>
+            <div class="col-sm-10">
+              <input type="number" class="form-control border border-info rounded"ngModel name="quantity"  style="width: 120px;" placeholder="Quantité"/>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
