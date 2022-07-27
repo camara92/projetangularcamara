@@ -1,1 +1,26 @@
-<p>register works!</p>
+<div class="container mt-4">
+  <h2 class="text-center couleurtexte">register</h2>
+
+
+  <form  #f="ngForm" (ngSubmit)="register(f)" class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Votre Email </mat-label>
+      <input
+        type="email"
+        matInput
+        placeholder="Votre email" name="email" ngModel
+
+      />
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Password</mat-label>
+      <input type="password" name="password" ngModel matInput placeholder="Votre mot de passe !" />
+    </mat-form-field>
+    <section>
+      <div class="example-label">
+        <button mat-raised-button color="accent" type="submit">Login</button>
+      </div>
+    </section>
+  </form>
+</div>
