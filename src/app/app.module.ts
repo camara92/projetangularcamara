@@ -15,6 +15,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { ProductComponent } from './product/product.component'
 import { FormsModule } from '@angular/forms';
 import { OrderesComponent } from './orderes/orderes.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { OrderesComponent } from './orderes/orderes.component';
     ProductComponent,
     RegisterComponent,
     OrderesComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
